@@ -1,0 +1,14 @@
+	*{margin: 0;padding: 0;color: black;text-decoration: none;list-style: none;margin: 0 auto;font-family: "微软雅黑";}
+    body{width: 22.45rem;}
+    
+    
+    
+    #shang{width: 100%;height:27rem ;background-color: #E6E6E6;}
+    #top{width: 22.45rem;height: 2.5rem; position: fixed;background-color:white;opacity: 0.9;}
+    #top img{width: 1rem;height: 1rem;margin-top: 0.5rem;float: left;margin-left: 0.5rem;}
+    #top p{font-size: 0.4rem;margin-top:0.3rem ;float: left;margin-left: 0.3rem;}
+    #erweima{width: 10%;height: 3rem;margin-left: 0rem;margin-top: 0.1rem;}
+    #erweima p{text-align: center;font-size: 0.5rem;}
+    #sousuo{width: 17.96rem;height: 2rem;float: left;margin-top: -2.7rem;margin-left: 2.5rem;}
+	#sousuo1{border-radius: 0.3rem;background: url(img/tnsousuo.png)no-repeat -0.5rem -0.8rem;width:100% ;height:1.7rem;float:left;text-indent:2rem; outline: none;background-color: whitesmoke;}
+    	

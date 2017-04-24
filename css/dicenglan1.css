@@ -1,0 +1,21 @@
+#xiaxuankuang{width: 22.45rem;height:3rem;background-color: white;position: fixed;bottom: 0;}
+#xiaxuankuang nav{float: left;}
+#xuankuang1{width: 17%;height: 3rem;float: left;margin-left: 0.65rem;text-align: center;}
+		#xuankuang1 p{font-weight: bold;font-size: 0.8rem;}
+		#xiaxuankuang .xuankuang1{float: left;background:url(../img/shouye11.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang1-1{background: url(../img/shouye.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang1:hover .xuankuang1-1{display: block;}
+		#xiaxuankuang .xuankuang2{background: url(../img/fenlei1.jpg)no-repeat 0.9rem 0.5rem;  width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang2-2{background: url(../img/fenlei.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang2:hover .xuankuang2-2{display: block;}
+		#xiaxuankuang .xuankuang3{background: url(../img/faxian1.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang3-3{background: url(../img/faxian.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang3:hover .xuankuang3-3{display: block;}
+		#xiaxuankuang .xuankuang4{background: url(../img/gouwuche11.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang4-4{background: url(../img/gouwuche.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang4:hover .xuankuang4-4{display: block;}
+		#xiaxuankuang .xuankuang5{background: url(../img/wode1.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang5-5{background: url(../img/wode.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang5:hover .xuankuang5-5{display: block;}
+		#fanhui{background-color: red;  opacity: 0.4;width: 3rem;height: 3rem;border-radius: 50%;position: fixed;right: 0rem;background: url(img/iconfont-fanhuidingbu.png)no-repeat 0.5rem 1rem;}
+		

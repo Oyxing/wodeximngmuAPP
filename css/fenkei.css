@@ -1,0 +1,14 @@
+#tuijianfenlei{width:100%;height: 4rem;margin: 1rem auto;margin-left: 5%;}
+p{margin-left: 5%;font-weight: bold;font-size: 0.8rem;}
+#tuijian{width:100%;height: 7rem;margin: 1rem auto;margin-left: 5%;background-color: white;}
+#tuijian img{  width: 35%;margin-top: 1.3rem;margin-left: 1rem;}
+#tuijian #maishouji{margin-left: 7rem;margin-top: -7rem;}
+.paihang{width: 40%; float: left; margin-top: -1.1rem;margin-left: 10rem;}
+.paihang p{color: white;}
+.paihang p:hover{color: red;}
+#reimenfenlei{width:100%;height: 6rem;margin: 1rem auto;margin-left: 5%;background-color: white;margin-top: 1rem;}
+#reimenfenlei img{width: 4em;margin-left: 0.5rem;}
+#reimenfenlei #shouji{text-align: center;margin-left: -10rem;}
+#reimenfenlei #kongtiao{text-align: center;margin-top: -5.7rem;margin-left: 9rem;}
+#reimenfenlei #diannao{text-align: center;margin-top: -5.5rem;}
+#fanhui{background-color: red;  opacity: 0.4;width: 3rem;height: 3rem;border-radius: 50%;position: fixed;right: 0rem;background: url(img/iconfont-fanhuidingbu.png)no-repeat 0.5rem 1rem;}

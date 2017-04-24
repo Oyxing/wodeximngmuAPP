@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/top.css"/>
+    <style type="text/css">
+    	
+    	#lunbo {width: 100%;height: 10rem;}
+    	#lunboxia{width: 80%;height: 5rem;float: left; margin-left: 10%;margin-top: 0.6rem;}
+    	#nav{width: 100%;margin-left: 3%;}
+    	#nav a li{float: left;}
+    	#nav .nav1{height: 3rem;width: 4rem;border-radius: 2rem;margin-left: 2.8%;margin-top: 8%;}
+   		.nav10 p,.nav9 p,.nav8 p,.nav7 p,.nav6 p,.nav5 p, .nav4 p,.nav3 p,.nav2 p,.nav1 p{font-size: 0.7rem;line-height: 1rem;font-weight: bold;text-align: center;margin-top: 0.3rem;}
+    	#nav .nav2{height: 2.7rem;background-color: yellowgreen;width: 2.9rem;border-radius: 1rem;margin-left: 3%;margin-top: 8%;}
+    	#nav .nav10{height: 2.7rem;background-color: darkorange;width: 2.9rem;border-radius: 1rem;margin-left: 5%;margin-top: 8%;}
+    	#nav .nav3{height: 2.7rem;background-color: darkorange;width: 2.9rem;border-radius: 1rem;margin-left: 5%;margin-top: 8%;}
+		#nav .nav4{height: 2.7rem;background-color: green;width: 2.9rem;border-radius: 1rem;margin-left: 5%;margin-top: 8%;}
+    	#nav .nav5{height: 3rem;width: 2.9rem;border-radius: 2rem;margin-top: 8%;}
+    	#nav .nav6{height: 3rem;width: 2.9rem;border-radius: 2rem;margin-top: 8%;}
+    	#nav .nav7{height: 2.7rem;width: 2.9rem;border-radius: 2rem;margin-top: 8%;}
+    	#nav .nav8{height: 2.9rem;background-color: darkorange;width: 2.9rem;border-radius:1rem;margin-top: 8%;}
+    	#nav .nav9{height: 3rem;width: 4rem;border-radius: 2rem;margin-top: 8%;}
+
+		#xiaxuankuang{width: 22.45rem;height:3rem;background-color: white;position: fixed;bottom: 0;}
+		#xiaxuankuang nav{float: left;}
+		#xuankuang1{width: 17%;height: 3rem;float: left;margin-left: 0.65rem;text-align: center;}
+		#xuankuang1 p{font-weight: bold;font-size: 0.8rem;text-align: center;}
+		#xiaxuankuang .xuankuang1{float: left;background:url(img/shouye11.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang1-1{background: url(img/shouye.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang1:hover .xuankuang1-1{display: block;}
+		#xiaxuankuang .xuankuang2{background: url(img/fenlei1.jpg)no-repeat 0.9rem 0.5rem;  width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang2-2{background: url(img/fenlei.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang2:hover .xuankuang2-2{display: block;}
+		#xiaxuankuang .xuankuang3{background: url(img/faxian1.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang3-3{background: url(img/faxian.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang3:hover .xuankuang3-3{display: block;}
+		#xiaxuankuang .xuankuang4{background: url(img/gouwuche11.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang4-4{background: url(img/gouwuche.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang4:hover .xuankuang4-4{display: block;}
+		#xiaxuankuang .xuankuang5{background: url(img/wode1.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;}
+		#xiaxuankuang .xuankuang5-5{background: url(img/wode.jpg)no-repeat 0.9rem 0.5rem;width: 3rem;height: 2.5rem;display: none;}
+		#xiaxuankuang .xuankuang5:hover .xuankuang5-5{display: block;}
+		
+		
+		#zhong{width: 22.45rem;height:10rem;}
+   		#zhongtop{margin-top: -10rem;}
+   		#zhongtop p{font-size: 1rem;margin-left: 6rem;margin-top: -1.8rem;font-weight: bold;}
+   		#zhongtopzi p{color: red;font-size: 0.8rem;margin-top:-1rem;margin-left: 16rem;}
+   		#zhongtuwen{width: 22.45rem;height:8rem ;}
+  		#zhongtu1{width:6rem;float: left;}
+  		#zhongtu1 img{height: 6rem;width: 6rem;}
+  		.zhongxiatuzi5 p ,#zhongtu1 p{color: red;text-align: center;margin-top: 0.5rem;}
+    	#gengduo{width: 2.3rem;height: 8rem;margin-left: 90%;}
+    	#gengduo img{width:1rem;float: left;margin-top: 3rem;color: red;}
+    	#gengduozi{float: left; width: 1rem;margin-left: 1rem;margin-top: -3rem;}
+    	#gengduo p{float: left;color: red;font-weight: bold;}
+    	#zhongxia{width: 22.45rem;height:16rem ;float: left;}
+    	.zhongxiatuzi {float: left;  width: 49.4%;height: 8.5rem;border: 0.1rem solid whitesmoke;}
+    	.zhongxiatuzi img{width: 50%;height: 4rem;margin-left: 5rem;  margin-top: 4rem;float: left;}
+   		.zhongxiatuzi h1{float: left;margin-top: -7rem;margin-left: 1rem;font-size: 1rem;}
+   		.zhongxiatuzi p{float: left;margin-top: -5rem;margin-left: 1rem;font-size: 0.8rem;color: #E6E6E6;}
+    
+    	#neirong{width: 22.45rem;height: 100%;}
+    	
+    	#zhongxia1{width: 22.45rem;height:16rem ;float: left;margin-top: 1.25rem;}
+   		.zhongxiatuzi1 {float: left;  width: 24.4%;height: 8.5rem;border: 0.1rem solid whitesmoke;}
+    	.zhongxiatuzi1 img{width: 70%;height: 4rem;margin-left: 1rem;  margin-top: 4rem;float: left;}
+   		.zhongxiatuzi1 h1{float: left;margin-top: -7rem;margin-left: 1rem;font-size: 1rem;}
+   		.zhongxiatuzi1 p{float: left;margin-top: -5rem;margin-left: 0.5rem;font-size: 0.8rem;color: #E6E6E6;}
+   		.zhongxiatuzi3{float: left;margin-left:11.2rem;margin-top: -8.6rem;}
+   		.zhongxiatuzi2{float: left;margin-left:11.2rem;margin-top: -8.65rem;}
+   		.zhongxiatuzi4{float: left;margin-left:16.8rem;margin-top: -8.6rem;}
+   		.zhongxiatuzi5{width: 50%;height: 20rem;border: 0.1rem solid whitesmoke;margin-top: -6.5rem;}
+   		.zhongxiatuzi6{float: left;margin-left:11.2rem;margin-top: -21.43rem;}
+   		.zhongxiatuzi5 img{width: 11.23rem;  height: 10rem;}
+   		.zhongxiatuzi5 input{ float: left; background-color: white;border: 0.1rem solid #E6E6E6;outline: none;margin-left: 8rem;margin-top: -1.5rem;}
+   		.zhongxiatuzi5 p {font-size: 0.9rem;}
+   		
+   		#chunlei{background: url(img/chunleidong.png); width: 22.45rem;height:26.5rem;float: left;margin-top:1.5rem ;}
+    	#chunlei li img{float: left;width: 49%;border-radius: 1rem;margin-top: 0.2rem;margin-left: 0.15rem;}
+    	#chunlei ul{margin-top: 10.5rem;}
+    	#aishenghuo {width: 22.45rem;}
+   		#aishenghuotu{width: 22.45rem;float: left;height:5rem ;margin-top: -7rem;}
+    	#aishenghuo1{width: 70%;float: left;}
+    	#aishenghuo2{width: 30%;float: left;margin-top: -1.8rem;height: 1.85rem;}
+   		#fanhui{opacity: 0.4;width: 3rem;height: 3rem;border-radius: 50%;position: fixed;right: 0rem;background: url(img/iconfont-fanhuidingbu.png)no-repeat 0.5rem 1rem;}
+  </style>
+    
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	
+		
+		<div id="shang">
+			<div id="top">
+		
+			<div id="erweima">
+			<a href="#"><img src="img/erweima.png"/>
+			<p>扫啊扫</p>
+			</a>
+			</div>
+				
+			<div id="sousuo">
+			
+				<input type="text"id="sousuo1"  placeholder="影音超极品类日" />	
+				<div id="yuyin">
+				<a href="#"><img src="img/huatong.png" style="width: 5%;height: 1.5rem;float: left;margin-left: 94%;margin-top: -1.7rem;" /></a>	
+				</div>
+			</div>
+			<div id="xiaoxi">
+			<a href="#"><img src="img/tnxiaoxi.png" style="float: left;margin-left:20.32rem;margin-top: -2.8rem;width: 10%;height: 2rem;"/></a>	
+			</div>
+			</div>
+	
+		<img id="lunbo"  src="img/toutu1.jpg"/>
+		<img id="lunboxia" src="img/toudi.jpg"/>
+	
+		<div id="neirong">
+			
+		
+		<div id="nav">
+			<ul>
+			<a href="#">	
+			<li class="nav1" >
+				<img src="img/chaoshi.jpg" style="width: 2.7rem;height: 2.6rem;margin-left: 0.5rem;margin-top: 0.1rem;"/>
+				<p>京东超市</p></li></a>
+			<a href="#">	<li class="nav1 nav2" >
+			<img src="img/haiwai.jpg" style="width: 2.5rem;height: 2.5rem;margin-left: 0.2rem;margin-top: 0.15rem;"/>
+			<p>全球通</p></li></a>
+			<a href="#"><li class="nav10" >
+				<img src="img/yifu.jpg" style="width: 4rem;height: 3rem;margin-left: -0.5rem;margin-top: -0.2rem;"/>
+				<p>服装城</p></li></a>
+			<a href="#"><li class="nav3">
+			<img src="img/xian.jpg" style="width: 2rem;height: 2rem;margin-left: 0.5rem;margin-top: 0.4rem;"/>
+			<p  style="margin-top: 0.6rem;">京东生鲜</p></li></a>
+			<a href="#"><li class="nav4">
+			<img src="img/jingdong.jpg" style="height: 2rem;width: 2rem;border-radius: 1rem;margin-left: 0.5rem;margin-top: 0.5rem;" />
+			<p style="margin-top:0.4rem;">京东到家</p></li></a>
+			<a href="#">	<li class="nav5" >
+			<img src="img/chong.jpg" style="width: 3rem;height: 3rem;margin-left: -3.6rem; "/>
+			<p style="margin-left: -7rem;" >充值中心</p></li></a>
+			<a href="#">	<li class="nav6" >
+			<img src="img/jingdou.jpg" style="width: 3rem;height: 2.9rem;margin-left: -2.2rem;"/>
+			<p style="margin-left: -4.5rem;" >令京豆</p></li></a>
+			<a href="#">	<li class="nav7" >
+			<img src="img/juan.jpg" style="width: 3rem;height: 2.9rem;margin-left: -1.1rem;"/>
+			<p style="margin-left: -2rem;">领卷</p></li></a>
+			<a href="#">	<li class="nav8" >
+			<img src="img/qian.jpg" style="width: 3rem;height: 2.5rem;" />
+			<p style="margin-top: 0.6rem;" >会赚钱</p></li></a>
+			<a href="#">	<li class="nav9" >
+			<img src="img/quanbu.jpg" style="width: 2.7rem;height: 2.9rem;margin-left: 1.1rem;"/>
+			<p style="margin-left: 1rem;"  >更多</p></li></a>
+		</ul>
+		</div>
+		</div>	
+		<div id="zhong">
+			<div id="zhongtop">
+			<a href="#"><h1 style="font-size: 1.3rem;color: red;line-height: 2rem;">京东秒杀</h1>
+			<p>16点场</p></a>	
+			<div id="zhongtopzi">
+			<a href="#"><p>摆好姿势等着你>></p></a>
+				</div>
+		
+			</div>
+			
+			<div id="zhongtuwen">
+				<div id="zhongtu1">
+					<img src="img/miaosha1.jpg"/>
+					<p>¥398</p>
+				</div>
+				<div id="zhongtu1">
+					<img src="img/miaosha2.jpg"/>
+					<p>¥200</p>
+				</div>
+				<div id="zhongtu1">
+					<img src="img/miaosha3.jpg"/>
+					<p>¥400</p>
+				</div>
+			
+				<a href="#">
+					<div id="gengduo">
+						<img src="img/jiantou.png"/>
+						<div id="gengduozi">
+						<p>查看更多</p>
+					</div>
+				
+			</div>
+			</a>
+			
+			
+		</div>
+		</div>	
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi" ><img src="img/faxianhaohuo.jpg"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6; ">发现品质生活</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/pinpaitoutiao.jpg"/>
+				<h1 style="color: blue; ">品牌头条</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">大牌驾到</p>
+				
+				</li></a><br />
+				<a href="#"><li class="zhongxiatuzi"><img src="img/paihangbang.jpg"/>
+				<h1>排行榜</h1>
+				<p>精品人气尖货</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3" style="margin-top: -8.65rem;"><img src="img/chaoguo.jpg"/>
+				<h1>闪购</h1>
+				<p>品牌限时特卖</p>
+				</li></a>
+			</ul>
+		</div>
+		<a href="#"><div id="chunlei">
+			<ul>
+				<li>
+					<a href="#"><img src="img/xiaotu1.jpg"/></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/xiaotu2.jpg"/></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/xiaotu3.jpg"/></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/xiaotu4.jpg"/></a>
+				</li>
+			</ul>
+		</div></a>
+		<img id="aishenghuo" src="img/aishenghuotop.jpg"/>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/faxianhaohuo.jpg"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">发现品质生活</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi  zhongxiatuzi3 "><img src="img/pinpaitoutiao.jpg"/>
+				<h1 style="color: blue;">品牌头条</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">大牌驾到</p>
+				
+				</li></a><br />
+				<a href="#"><li class="zhongxiatuzi"><img src="img/paihangbang.jpg"/>
+				<h1>排行榜</h1>
+				<p>精品人气尖货</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi2"> <img src="img/shangou.jpg"/>
+				<h1>闪购</h1>
+				<p>品牌限时特卖</p>
+				</li></a>
+			</ul>
+		</div>
+		<div id="zhongxia1">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi1" ><img src="img/aishenghuobaobao.jpg"/>
+				<h1 style="color: #43C6C3; ">爱宝宝</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">每满99减30</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaimei.jpg"/>
+				<h1 style="color: blue; ">爱美丽</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">纪梵希小粉皮</p>
+				
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/faxianhaohuo.jpg"/>
+				<h1>电器</h1>
+				<p>满199减100</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"> <img src="img/aishenghuoaiguang.jpg"/>
+				<h1>爱逛</h1>
+				<p>满299减100</p>
+				</li></a>
+			</ul>
+		</div>
+		<img id="aishenghuotu" src="img/aishenghuodibu1.jpg"/>
+		
+		<img id="aishenghuo" style="margin-top: -2.85rem;" src="img/xiangsdapinzhi.jpg"/>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/pinzhidaren.png"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">发现品质生活</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/pinzhidapai.jpg"/>
+				<h1 style="color: blue; ">品牌头条</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">大牌驾到</p>
+				
+				</li></a><br />
+				<a href="#"><li class="zhongxiatuzi"><img src="img/pinzhishoushi.jpg"/>
+				<h1>排行榜</h1>
+				<p>精品人气尖货</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi2"> <img src="img/pinzhishingshang.jpg"/>
+				<h1>闪购</h1>
+				<p>品牌限时特卖</p>
+				</li></a>
+			</ul>
+		</div>
+		<div id="zhongxia1">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi1" ><img src="img/pinzhishejishi.jpg"/>
+				<h1 style="color: #43C6C3; ">爱美丽</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">每满99减30</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/pinzhijingxuan.jpg"/>
+				<h1 style="color: blue; ">爱自己</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">纪梵希小粉皮</p>
+				
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/pinzhijianhuo.jpg"/>
+				<h1>咖啡</h1>
+				<p>满50减10</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"> <img src="img/aishenghuoaiguang.jpg"/>
+				<h1>爱逛</h1>
+				<p>满299减100</p>
+				</li></a>
+			</ul>
+		</div>
+		<img id="aishenghuotu" src="img/aishenghuodibu1.jpg"/>
+		
+		<img id="aishenghuo" style="margin-top:-1.8rem;" src="img/goutese.png"/>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/faxianhaohuo.jpg"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1><p style="color: #43C6C3;background-color: #E6E6E6;">发现品质生活</p></li></a>
+				
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/paihangbang.jpg"/>
+				<h1>排行榜</h1><p>精品人气尖货</p></li></a>
+				
+				<a href="#"><li class="zhongxiatuzi1  "><img src="img/shangou.jpg"/>
+				<h1>闪购</h1><p>品牌限时特卖</p></li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/shangou.jpg"/>
+				<h1>闪购</h1><p>品牌限时特卖</p></li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/pinpaitoutiao.jpg"/>
+				<h1 style="color: blue; ">品牌头条</h1><p style="color: blue;background-color: #E6E6E6;">大牌驾到</p></a>
+				
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"><img src="img/shangou.jpg"/>
+				<h1>闪购</h1><p>品牌限时特卖</p></li></li></a>
+			</ul>
+		</div>
+		<div id="zhongxia1">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi1" ><img src="img/aishenghuobaobao.jpg"/>
+				<h1 style="color: #43C6C3; ">爱宝宝</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">每满99减30</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaimei.jpg"/>
+				<h1 style="color: blue; ">爱美丽</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">纪梵希小粉皮</p>
+				
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaijia.jpg"/>
+				<h1>电器</h1>
+				<p>满1999减100</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"> <img src="img/aishenghuoaiguang.jpg"/>
+				<h1>爱逛</h1>
+				<p>满299减100</p>
+				</li></a>
+			</ul>
+		</div>
+		<img id="aishenghuotu" src="img/aishenghuodibu1.jpg"/>
+		
+		<img id="aishenghuo1" style="margin-top:-1.8rem;" src="img/guangshangchang.jpg"/>
+		<a href="#"><img  id="aishenghuo2" style="margin-left: 70%;height:1.8rem ;" src="img/gengduojingcai.jpg"/></a>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/faxianhaohuo.jpg"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">发现品质生活</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/paihangbang.jpg"/>
+				<h1>排行榜</h1><p>精品人气尖货</p></li></a>
+				
+				<a href="#"><li class="zhongxiatuzi"> <img src="img/shangou.jpg"/>
+				<h1>闪购</h1><p>品牌限时特卖</p></li>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/pinpaitoutiao.jpg"/>
+				<h1 style="color: blue;">品牌头条</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">大牌驾到</p></a>
+			</ul>
+		</div>
+		<div id="zhongxia1">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi1" ><img src="img/aishenghuobaobao.jpg"/>
+				<h1 style="color: #43C6C3; ">爱宝宝</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">每满99减30</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaimei.jpg"/>
+				<h1 style="color: blue; ">爱美丽</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">纪梵希小粉皮</p>
+				
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaijia.jpg"/>
+				<h1>电器</h1>
+				<p>满1999减100</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"> <img src="img/aishenghuoaiguang.jpg"/>
+				<h1>爱逛</h1>
+				<p>满299减100</p>
+				</li></a>
+			</ul>
+		</div>
+		<div id="zhongxia1"style="margin-top: -7.5rem;">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi1" ><img src="img/aishenghuobaobao.jpg"/>
+				<h1 style="color: #43C6C3; ">爱宝宝</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">每满99减30</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaimei.jpg"/>
+				<h1 style="color: blue; ">爱美丽</h1>
+				<p style="color: blue;background-color: #E6E6E6; ">纪梵希小粉皮</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1"><img src="img/aishenghuoaijia.jpg"/>
+				<h1>电器</h1>
+				<p>满1999减100</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi1 zhongxiatuzi4"> <img src="img/aishenghuoaiguang.jpg"/>
+				<h1>爱逛</h1>
+				<p>满299减100</p>
+				</li></a>
+			</ul>
+		</div>
+		<img id="aishenghuotu" src="img/aishenghuodibu1.jpg"/>
+		
+		<img id="aishenghuo1" style="margin-top:-1.8rem;" src="img/gouwuqingdan.jpg"/>
+		<a href="#"><img style="height: 2.05rem;"  id="aishenghuo2" src="img/gengduojingcai.jpg"/></a>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/faxianhaohuo.jpg"/>
+				<h1 style="color: #43C6C3; ">发现好货</h1>
+				<p style="color: #43C6C3;background-color: #E6E6E6;">发现品质生活</p>
+				</li></a>
+				
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/paihangbang.jpg"/>
+				<h1>排行榜</h1>
+				<p>精品人气尖货</p>
+				</li></a>
+				
+			</ul>
+		</div>
+		
+		<img id="aishenghuo1" style="margin-top:-7.3rem;" src="img/faxisadaanhaodian.jpg"/>
+		<a href="#"><img style="height: 2.06rem;margin-top: -7.3rem;float: left;margin-left: 70%;" id="aishenghuo2" src="img/gengduojingcai.jpg"/></a>
+		<div id="zhongxia" style="margin-top: -5.3rem;">
+			<ul>
+				<a href="#"><li class="zhongxiatuzi"><img src="img/nvshengcheng.jpg"/>
+				<p style="color: black;font-size: 1rem;margin-top: -7rem;" >100元内精准体重秤盘点，爱美女生收</p>
+				</li></a>
+				<a href="#"><li class="zhongxiatuzi zhongxiatuzi3"><img src="img/kenglaoshouji.jpg"/>
+				<p style="color: black;font-size: 1rem;margin-top: -7rem;" >学生党买手机不啃老三千元内智能手机推荐</p>
+				</li></a>
+			</ul>
+		</div>
+		
+		<img id="aishenghuo" style="margin-top:-7.3rem;float: left;" src="img/weinituijian.jpg"/>
+		<div id="zhongxia">
+			<ul>
+				<a href="#"  class="zhongxiatuzi5" ><li class="zhongxiatuzi5" style="margin-left: 0rem;" ><img src="img/zaoping.jpg"/>
+
+				<p style="color: black;" >上院地毯 满铺人造草坪 塑料草料草皮人造草坪幼儿园...</p>
+					<p style="margin-left: -7rem;margin-top: 2rem;" >¥15.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+				<a href="#" class="zhongxiatuzi5 zhongxiatuzi6" ><li ><img src="img/shodian.jpg"/>
+				
+				<p style="color: black;" >神火C8T6强光手电筒</p>
+					<p style="margin-left: -7rem;margin-top: 3rem;">¥49.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+			</ul>
+		</div>
+		<div id="zhongxia"style="margin-top: 4.1rem;">
+			<ul>
+				<a href="#"  class="zhongxiatuzi5" ><li class="zhongxiatuzi5" style="margin-left: 0rem;"  ><img src="img/faxianhaohuo.jpg"/>
+
+				<p style="color: black;" >上院地毯 满铺人造草坪 塑料草料草皮人造草坪幼儿园...</p>
+					<p style="margin-left: -7rem;margin-top: 2rem;" >¥15.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+				<a href="#" class="zhongxiatuzi5 zhongxiatuzi6" ><li ><img src="img/paihangbang.jpg"/>
+				
+				<p style="color: black;" >精品人气尖货</p>
+					<p style="margin-left: -7rem;margin-top: 3rem;">¥49.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+			</ul>
+		</div>
+		<div id="zhongxia"style="margin-top: 4.1rem;">
+			<ul>
+				<a href="#"  class="zhongxiatuzi5" ><li class="zhongxiatuzi5" style="margin-left: 0rem;"  ><img src="img/faxianhaohuo.jpg"/>
+
+				<p style="color: black;" >上院地毯 满铺人造草坪 塑料草料草皮人造草坪幼儿园...</p>
+					<p style="margin-left: -7rem;margin-top: 2rem;" >¥15.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+				<a href="#" class="zhongxiatuzi5 zhongxiatuzi6" ><li ><img src="img/paihangbang.jpg"/>
+				
+				<p style="color: black;" >精品人气尖货</p>
+					<p style="margin-left: -7rem;margin-top: 3rem;">¥49.00</p><input type="button" name="" id="" value="看相似" />
+				
+				</li></a>
+				
+			</ul>
+		</div>
+		</div>
+		
+		
+		<a href="#"><div id="fanhui" title="返回顶部"></div></a>
+		
+		<div id="xiaxuankuang" >
+			<div id="xuankuang1">
+				<a href="index.html"><nav class="xuankuang1">
+				<p class="xuankuang1-1" >
+					首页
+				</p>
+				
+			</nav></a>
+			</div>
+			<div id="xuankuang1" >
+				<a href="html/tuijianfenlei.html"><nav class="xuankuang2">
+				<p class="xuankuang2-2" >
+					分类</p>
+			</nav></a>
+			</div>
+			<div id="xuankuang1" >
+			<a href="html/faxian.html"><nav class="xuankuang3">
+				<p class="xuankuang3-3">发现</p>
+			</nav></a>
+			</div>
+			<div id="xuankuang1" >
+			
+			<a href="html/gouwuche.html"><nav class="xuankuang4">
+				<p class="xuankuang4-4" >
+					购物车
+				</p>
+			</nav></a>
+			</div>
+			<div id="xuankuang1" >
+			<a href="html/wode.html"><nav class="xuankuang5">
+				<p class="xuankuang5-5" >
+					我的
+				</p>
+			</nav></a>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var x=1 ;
+			var lunbo=document.getElementById("lunbo");
+			function jia(){
+				x++;
+				if(x==5){x=1};
+				lunbo.src="img/toutu"+x+".jpg"
+			}
+			setInterval(jia,3000)
+		</script>
+		<script type="text/javascript">
+			var y=1 ;
+			var aishenghuotu=document.getElementById("aishenghuotu");
+			function jia(){
+				y++;
+				if(y==3){y=1};
+				aishenghuotu.src="img/aishenghuodibu"+y+".jpg"
+			}
+			setInterval(jia,3000)
+		</script>
+</body>
+</html>
